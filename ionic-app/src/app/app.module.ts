@@ -8,6 +8,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { NewsPage } from "../pages/news/news";
+import { NewsdetailPage } from "../pages/newsdetail/newsdetail";
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -18,11 +19,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     TabsPage,
-    NewsPage
+    NewsPage,
+    NewsdetailPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp,{
+      tabsHideOnSubPages:'true'
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -31,7 +35,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     TabsPage,
-    NewsPage
+    NewsPage,
+    NewsdetailPage
   ],
   providers: [
     StatusBar,

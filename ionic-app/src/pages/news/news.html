@@ -16,7 +16,7 @@
 <ion-content padding>
   <h2>{{message}}</h2>
   <ion-list>
-    <ion-item *ngFor="let item of list">
+    <ion-item *ngFor="let item of list" (click)="gotoDetail($event)">
       {{item}}
     </ion-item>
   </ion-list>
