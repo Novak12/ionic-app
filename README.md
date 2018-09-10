@@ -1,1 +1,1 @@
-This is ionic app
+This is a ionic app
