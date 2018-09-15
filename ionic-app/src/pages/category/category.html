@@ -1,11 +1,28 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      Category
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
+  <div class="cate_content">
+    <div class="cate_left">
+      <ion-list inset>
+        <ion-item *ngFor='let item of cateList'>
+          {{item}}
+        </ion-item>
+      </ion-list>
+    </div>
+
+    <div class="cate_right">
+        <ion-row>
+          <ion-col col-4 *ngFor='let item of recList'>
+            <img src="{{item.pic}}"/>
+          </ion-col>
+        </ion-row>
+      </div>
+  </div>
 
 </ion-content>
